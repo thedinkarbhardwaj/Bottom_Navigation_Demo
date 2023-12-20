@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.bottomnavigationdemo.homefragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" >
+        <action
+            android:id="@+id/action_home_to_singleFragment"
+            app:destination="@id/singleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cause"
+        android:name="com.example.bottomnavigationdemo.causeFragment.CauseFragment"
+        android:label="fragment_cause"
+        tools:layout="@layout/fragment_cause" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.bottomnavigationdemo.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/singleFragment"
+        android:name="com.example.bottomnavigationdemo.singleFrag.SingleFragment"
+        android:label="fragment_single"
+        tools:layout="@layout/fragment_single" />
+</navigation>
